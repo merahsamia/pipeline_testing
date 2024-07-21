@@ -18,6 +18,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat "php test.php"
+                echo "just trying"
             }
         }
         stage('Deploy') {
