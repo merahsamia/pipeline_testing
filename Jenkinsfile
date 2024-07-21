@@ -26,7 +26,7 @@ pipeline {
                //Simulation du déploiement
                         script {
                             def deployDir = "C:\\Users\\Sam\\Desktop\\Pipeline-jenkins\\deployDir"
-                            bat "mkdir ${deployDir}"
+                            //bat "mkdir ${deployDir}"
                             bat "copy index.php ${deployDir}\\"
                             echo "Déploiement réussi dans ${deployDir}"
                         }
