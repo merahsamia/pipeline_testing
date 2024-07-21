@@ -32,6 +32,17 @@ pipeline {
                         }
             }
         }
-       
+   }
+
+  post {
+        always {
+            echo 'This runs always'
+        }
+        success {
+            echo 'This runs on success.'
+        }
+        failure {
+            echo 'This runs on failure.'
+        }
     }
 }
